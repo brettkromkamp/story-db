@@ -46,7 +46,7 @@ from storydb.core.models.resource import Resource
 from storydb.core.models.thing import Thing
 from storydb.core.store.storystore import StoryStore
 
-MAP_IDENTIFIER = 3
+MAP_IDENTIFIER = 4
 USER_IDENTIFIER = 1
 SETTINGS_FILE_PATH = os.path.join(os.path.dirname(__file__), "../settings.ini")
 RESOURCES_SOURCE_DIRECTORY = "/home/brettk/Source/story-technologies/resources"
