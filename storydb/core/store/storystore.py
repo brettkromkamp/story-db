@@ -97,7 +97,7 @@ class StoryStore:
             if hasattr(entity, "description") and entity.description:
                 text_occurrence = Occurrence(
                     instance_of="text",
-                    description_identifier=entity.identifier,
+                    topic_identifier=entity.identifier,
                     resource_data=entity.description,
                 )
                 self.topic_store.set_occurrence(map_identifier, text_occurrence)
@@ -119,7 +119,7 @@ class StoryStore:
             for resource in entity.resources:
                 occurrence = Occurrence(
                     instance_of=resource.instance_of,
-                    description_identifier=entity.identifier,
+                    topic_identifier=entity.identifier,
                     resource_ref=resource.reference,
                     resource_data=resource.data,
                 )
