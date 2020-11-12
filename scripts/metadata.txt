@@ -1,0 +1,81 @@
+# ========== THINGS ==========
+{
+  "name": "Airplane",
+  "type": "thing",
+  "identifier": "airplane-1"
+}
+
+{
+  "name": "Monorail",
+  "type": "thing",
+  "identifier": "monorail"
+}
+
+{
+  "name": "Building",
+  "type": "thing",
+  "identifier": "building-1"
+}
+
+# ========== PARTICIPANTS ==========
+
+{
+  "name": "Engineer",
+  "type": "participant",
+  "identifier": "engineer"
+}
+
+# ========== NAVIGATION ==========
+
+{
+  "name": "Vehicle",
+  "type": "navigation",
+  "identifier": "vehicle-1"
+}
+
+# ========== TAGS ==========
+
+building
+colonist
+transportation
+
+# ========== API CALLS ==========
+
+# ----- EVENTS -----
+
+http://localhost:5000/api/get-event/10/industrial-sector
+http://localhost:5000/api/get-event/10/research-sector
+http://localhost:5000/api/get-event/10/colony
+
+# ----- PARTICIPANTS -----
+
+http://localhost:5000/api/get-participant/10/foreman
+http://localhost:5000/api/get-participant/10/engineer
+http://localhost:5000/api/get-participant/10/scientist
+http://localhost:5000/api/get-participant/10/pilot
+
+# ----- THINGS -----
+
+http://localhost:5000/api/get-thing/10/airplane-1
+http://localhost:5000/api/get-thing/10/monorail
+http://localhost:5000/api/get-thing/10/airplane-2
+http://localhost:5000/api/get-thing/10/building-1
+http://localhost:5000/api/get-thing/10/building-2
+http://localhost:5000/api/get-thing/10/building-3
+http://localhost:5000/api/get-thing/10/building-4
+http://localhost:5000/api/get-thing/10/building-5
+http://localhost:5000/api/get-thing/10/building-6
+http://localhost:5000/api/get-thing/10/air-defense-system
+http://localhost:5000/api/get-thing/10/communication-link
+http://localhost:5000/api/get-thing/10/rocket-assembly
+http://localhost:5000/api/get-thing/10/rover
+
+# ----- NARRATIVE -----
+
+http://localhost:5000/api/get-narrative/10/industrial-sector
+
+# ----- TAGS -----
+
+http://localhost:5000/api/get-tag/10/building
+http://localhost:5000/api/get-tag/10/colonist
+http://localhost:5000/api/get-tag/10/transportation

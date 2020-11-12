@@ -49,8 +49,8 @@ from storydb.core.store.storystore import StoryStore
 MAP_IDENTIFIER = 4
 USER_IDENTIFIER = 1
 SETTINGS_FILE_PATH = os.path.join(os.path.dirname(__file__), "../settings.ini")
-RESOURCES_SOURCE_DIRECTORY = "/home/brettk/Source/story-technologies/resources"
-RESOURCES_DESTINATION_DIRECTORY = "/home/brettk/Source/story-technologies/resources"
+RESOURCES_SOURCE_DIRECTORY = "/home/brettk/Source/story-technologies/demo/resources"
+RESOURCES_DESTINATION_DIRECTORY = "/home/brettk/Source/story-technologies/demo/resources"
 
 config = configparser.ConfigParser()
 config.read(SETTINGS_FILE_PATH)
