@@ -33,12 +33,6 @@
   "identifier": "vehicle-1"
 }
 
-# ========== TAGS ==========
-
-building
-colonist
-transportation
-
 # ========== API CALLS ==========
 
 # ----- EVENTS -----

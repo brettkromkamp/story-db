@@ -3,6 +3,8 @@ Space Colony: procedural narrative definition script. Part of the StoryTechnolog
 
 October 09, 2020
 Brett Alistair Kromkamp (brett.kromkamp@gmail.com)
+
+Storyteller URL: URL: https://brettkromkamp.com/space-colony/index.html?story-identifier=11&event-identifier=industrial-sector
 """
 
 
