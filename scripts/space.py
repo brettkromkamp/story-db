@@ -18,7 +18,7 @@ from storydb.core.models.resource import Resource
 from storydb.core.models.thing import Thing
 from storydb.core.store.storystore import StoryStore
 
-MAP_IDENTIFIER = 11
+MAP_IDENTIFIER = 2
 USER_IDENTIFIER = 1
 SETTINGS_FILE_PATH = os.path.join(os.path.dirname(__file__), "../settings.ini")
 RESOURCES_SOURCE_DIRECTORY = "/home/brettk/Source/story-technologies/resources/space-colony"
@@ -190,6 +190,7 @@ place2 = Place(
     description='A science or research park (also called a "university research park", "technology park" or a "science and technology park" (STP)) is defined as being a property-based development that accommodates and fosters the growth of tenant firms and that is affiliated with a university (or a government and private research bodies) based on proximity, ownership, and/or governance.',
 )
 place2.add_resource(Resource("3d-scene", reference="research-sector.glb"))
+place2.add_resource(Resource("audio", reference="suspense.ogg"))
 
 place3 = Place(
     "colony-place",
@@ -239,7 +240,20 @@ event21 = Event(
 )
 event21.description = "A rocket is being assembled in the Research sector."
 event21.add_thing(thing12)  # Rocket Assembly Operations
+
 event20.add_event(event21)
+
+event22 = Event(
+    "research-sector-plane-refueling",
+    "Refueling a plane in the Research Sector",
+    rank=22,
+    name="Refueling Plane Operations",
+)
+event22.description = "A plane is being refueled in the Research sector."
+event22.add_participant(participant3)  # Pilot
+
+event20.add_event(event22)
+# ----- SUB-EVENTS -----
 
 story_store.set_event(MAP_IDENTIFIER, event20)
 
